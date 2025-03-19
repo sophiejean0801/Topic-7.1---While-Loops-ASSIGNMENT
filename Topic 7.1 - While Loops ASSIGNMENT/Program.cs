@@ -1,4 +1,5 @@
-﻿using System.Net.Security;
+﻿using System;
+using System.Net.Security;
 
 namespace Topic_7._1___While_Loops_ASSIGNMENT
 {
@@ -9,57 +10,40 @@ namespace Topic_7._1___While_Loops_ASSIGNMENT
 
             Console.ForegroundColor = ConsoleColor.Red;
             bool done = false;
+            string guess;
+            int flip, heads = 0, tails = 1; 
+            Random random = new Random();
+
+           // heads is 0 and tails is 1
+
             int points = 3;
             Console.WriteLine("Welcome to the worst casino! You will be playing a game of chance. ");
-            while (points > 0)
+            while (!done)
             {
                 Console.WriteLine("Enter heads or tails");
-                int coin = rand.Next(0, 2);
+                guess = Console.ReadLine();
+                flip = random.Next(0, 2);
                 
-                if ()
+                if (guess == "heads" && guess == heads)
                 {
-                    Console.WriteLine("Heads");
-                }
-                else
-                {
-                    Console.WriteLine("Tails");
-                }
-                int num1 = Convert.ToInt32(Console.ReadLine());
-                Random rand = new Random();
-                int num2 = rand.Next(1, 7);
-                if (num1 == num2)
-                {
-                    Console.WriteLine("Great job! You get to keep your points!!");
-                }
-                else
-                {
-                    Console.WriteLine("You suck! You lose 1 point!");
-                    points--;
-                }
-                Console.WriteLine("You have " + points + " points.");
-
-                Console.WriteLine("Would you like to continue? Who knows, you might get lucky.");
-                string answer = Console.ReadLine();
-                if (answer == "no")
-                {
-                    Console.WriteLine("Coward.");
-                    done = true;
-                }
-                else
-                {
-                    done = false;
-                }
-                while (points == 0)
-                {
-                    Console.WriteLine("You lose. How does it feel to fail?");
-                    done = true;
+                   
 
                 }
+                if (guess == "tails")
+                {
+                    
+                }
+
+                if (flip == flip2)
+                {
+                    Console.WriteLine("You're actually somewhat lucky! Look at you go!");
+                }
+                
                 
 
 
-
-
+                
+                       
             }
         }
     }
