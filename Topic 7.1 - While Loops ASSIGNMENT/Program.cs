@@ -51,16 +51,15 @@ namespace Topic_7._1___While_Loops_ASSIGNMENT
                     Console.WriteLine("Coward.");
                     done = true;
                 }
-                if (Console.ReadLine() == "yes")
+                else
                 {
-                    Console.WriteLine("Good for you. You don't suck that much.");
                     done = false;
                 }
-                while (points == 0)
-                {
+               while (points == 0)
+               {
                     Console.WriteLine("You have no more points! You loser!");
                     done = true;
-                }
+               }
 
 
 
